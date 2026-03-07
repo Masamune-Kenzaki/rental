@@ -8,7 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $nama = 'Teddy';
+        $pekerjaan = 'programmer';
+        return view('home', compact('nama', 'pekerjaan'));
     }
 
     public function contact()
